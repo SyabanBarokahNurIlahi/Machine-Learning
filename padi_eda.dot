@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Provinsi_Sumatera Utara <= 0.5\ngini = 0.875\nsamples = 201\nvalue = [26, 24, 25, 25, 26, 25, 24, 26]\nclass = Aceh", fillcolor="#ffffff"] ;
+1 [label="Provinsi_Aceh <= 0.5\ngini = 0.857\nsamples = 175\nvalue = [26, 24, 25, 25, 26, 25, 24, 0]\nclass = Aceh", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Provinsi_Riau <= 0.5\ngini = 0.833\nsamples = 149\nvalue = [0, 24, 25, 25, 26, 25, 24, 0]\nclass = Riau", fillcolor="#fdfeff"] ;
+1 -> 2 ;
+3 [label="Provinsi_Sumatera Barat <= 0.5\ngini = 0.8\nsamples = 123\nvalue = [0, 24, 25, 25, 0, 25, 24, 0]\nclass = Jambi", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="Provinsi_Lampung <= 0.5\ngini = 0.75\nsamples = 98\nvalue = [0, 24, 25, 25, 0, 0, 24, 0]\nclass = Jambi", fillcolor="#ffffff"] ;
+3 -> 4 ;
+5 [label="Provinsi_Jambi <= 0.5\ngini = 0.667\nsamples = 73\nvalue = [0, 24, 25, 0, 0, 0, 24, 0]\nclass = Jambi", fillcolor="#fbfefb"] ;
+4 -> 5 ;
+6 [label="Provinsi_Bengkulu <= 0.5\ngini = 0.5\nsamples = 48\nvalue = [0, 24, 0, 0, 0, 0, 24, 0]\nclass = Bengkulu", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 24\nvalue = [0, 0, 0, 0, 0, 0, 24, 0]\nclass = Sumatera Selatan", fillcolor="#d739e5"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 24\nvalue = [0, 24, 0, 0, 0, 0, 0, 0]\nclass = Bengkulu", fillcolor="#c8e539"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 25\nvalue = [0, 0, 25, 0, 0, 0, 0, 0]\nclass = Jambi", fillcolor="#47e539"] ;
+5 -> 9 ;
+10 [label="gini = 0.0\nsamples = 25\nvalue = [0, 0, 0, 25, 0, 0, 0, 0]\nclass = Lampung", fillcolor="#39e5ac"] ;
+4 -> 10 ;
+11 [label="gini = 0.0\nsamples = 25\nvalue = [0, 0, 0, 0, 0, 25, 0, 0]\nclass = Sumatera Barat", fillcolor="#5639e5"] ;
+3 -> 11 ;
+12 [label="gini = 0.0\nsamples = 26\nvalue = [0, 0, 0, 0, 26, 0, 0, 0]\nclass = Riau", fillcolor="#399de5"] ;
+2 -> 12 ;
+13 [label="gini = 0.0\nsamples = 26\nvalue = [26, 0, 0, 0, 0, 0, 0, 0]\nclass = Aceh", fillcolor="#e58139"] ;
+1 -> 13 ;
+14 [label="gini = 0.0\nsamples = 26\nvalue = [0, 0, 0, 0, 0, 0, 0, 26]\nclass = Sumatera Utara", fillcolor="#e53972"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
